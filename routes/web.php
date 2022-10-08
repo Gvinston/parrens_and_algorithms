@@ -46,6 +46,7 @@ Route::group(['prefix' => 'behavioral'], function () {
 
 Route::group(['prefix' => 'algorithms'], function () {
     Route::get('/binary_search', [\App\Http\Controllers\Algorithms\BinarySearchController::class, 'get']);
+    Route::get('/breadth_first_search', [\App\Http\Controllers\Algorithms\BreadthFirstSearchController::class, 'get']);
     Route::get('/selection_sort', [\App\Http\Controllers\Algorithms\SelectionSortController::class, 'get']);
     Route::get('/quick_sort', [\App\Http\Controllers\Algorithms\QuickSortController::class, 'get']);
     Route::get('/recursion_sum', [\App\Http\Controllers\Algorithms\RecursionController::class, 'sum']);
