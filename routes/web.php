@@ -53,4 +53,5 @@ Route::group(['prefix' => 'algorithms'], function () {
     Route::get('/recursion_count', [\App\Http\Controllers\Algorithms\RecursionController::class, 'count']);
     Route::get('/recursion_get_max', [\App\Http\Controllers\Algorithms\RecursionController::class, 'getMax']);
     Route::get('/algorithm_dijkstra', [\App\Http\Controllers\Algorithms\AlgorithmDijkstraController::class, 'get']);
+    Route::get('/algorithm_approximation', [\App\Http\Controllers\Algorithms\ApproximationAlgorithmController::class, 'get']);
 });
